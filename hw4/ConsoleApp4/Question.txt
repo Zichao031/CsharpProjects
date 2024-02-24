@@ -1,0 +1,29 @@
+Test your Knowledge
+1. Describe the problem generics address.
+    - reasons to not use object as input parameter type: 1) loose type safety 2) unwanted boxing
+    - allow us to define the classes or methods but defer the specification of types until the class or methods is declared and called
+    - code reusability: without generics, you would need to duplicate code for different data type
+    
+2. How would you create a list of strings, using the generic List class?
+    // CODE
+    using System.Collections.Generic
+    List<string> strs = new List<string>();
+    
+3. How many generic type parameters does the Dictionary class have?
+    - two: Dictionary<TKey, TValue> 
+4. True/False. When a generic class has multiple type parameters, they must all match.
+    False: Dictionary<TKey, TValue>
+5. What method is used to add items to a List object?
+    List<string> strs = new List<string>();
+    strs.Add("string1")
+6. Name two methods that cause items to be removed from a List.
+    strs.Remove("string1")
+    strs.RemoveAt(2) // remove the element at index 2
+7. How do you indicate that a class has a generic type parameter?
+    use <> "angle bracket"
+8. True/False. Generic classes can only have one generic type parameter.
+    False
+9. True/False. Generic type constraints limit what can be used for the generic type.
+    True 
+10. True/False. Constraints let you use the methods of the thing you are constraining to.
+    True
